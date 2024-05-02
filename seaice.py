@@ -26,7 +26,7 @@ plt.grid(True, axis='y')      # Y축 그리드 설정
 
 plt.show()
 
-
+"""
 # 8월달의 북극 해빙 면적 데이터
 import matplotlib.pyplot as plt
 import csv
@@ -73,3 +73,4 @@ plt.title('남극 해빙 면적 평균(10^6km)')
 plt.grid(True, axis='y')
 
 plt.show()
+"""
