@@ -157,7 +157,7 @@ plt.rcParams['figure.figsize'] = (150, 10)
 plt.rcParams['font.size'] = 12
 
 plt.plot(time, r_current_speed, 'b', label='Current_Speed [cm/s]')
-plt.plot(time, r_wind_speed, 'g', label='Wind_Speed * 10 [m/s]')
+plt.plot(time, r_wind_speed, 'g', label='Wind_Speed [cm/s]')
 for i in range(1422):
   if r_current_speed[i] > r_wind_speed[i]:
     plt.fill_between(time[i-1:i+1], r_current_speed[i-1:i+1], r_wind_speed[i-1:i+1], color='lightgray', alpha=0.5)

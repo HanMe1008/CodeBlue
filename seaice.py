@@ -13,13 +13,13 @@ year = []
 
 for row in data :
     result.append(float(row[1]))
-    year.append(row[0].split(" ")[0])
+    year.append(row[0].split(" ")[0][:-1])
 
-plt.rc('font', family='NanumBarunGothic')       # 폰트 설정, 나눔바른고딕
+#plt.rc('font', family='NanumBarunGothic')       # 폰트 설정, 나눔바른고딕
 plt.figure(figsize = (15,5))        # figure 사이즈 설정
 plt.plot(year, result, linewidth=4)       # X축 데이터, Y축 데이터, 선굵기 설정
 plt.ylim([4.5, 8.5])        # Y축의 범위: [ymin, ymax]
-plt.title('북극 해빙 면적 평균(10^6km)')        # 타이틀 설정
+plt.title('Arctic Sea Ice Area Average(10^6km)')        # 타이틀 설정
 plt.xticks(ticks=year, labels=year, rotation=-45)     # X축 텍스트 방향 기울이기
 plt.locator_params(axis='x', nbins=len(year)/2)     # X축 연도 빈도수 줄이기
 plt.grid(True, axis='y')      # Y축 그리드 설정
